@@ -1,0 +1,65 @@
+<h1 id="title">Survey Form</h1>
+<p d="description"> This is a short survey for reviewing how you like the Vegan Starter Guide so far</p>
+
+<form id="survey-form">
+<div class="Form-group">
+  <label id="name-label" for="name">Name:</label>
+ <input type="text" id="name-label" required placeholder="Enter your name">
+  <span class="validity"></span>
+  </div>
+  
+  <div class="form-group">
+    <label id="email-label" for="email">Email:</label>
+    <input id="email" type="email" 
+         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required placeholder="Enter your email">
+    <span class="validity"></span>
+  </div>
+  
+  <div class="form-group">
+    <label id="number" for="number">Your Age:</label>
+    <input id="number" type="number" min="10" max="99" step="1" required placeholder="Age">
+    <span class="validity"></span>
+  </div>
+
+ <div class="form-group">
+   <label id="dietary-style" for="dropdown">What is your current dietary choice:</label>
+   <select id="Dietary-label" name="dietary-role">
+     <option value="" disabled selected>Select an option</option>
+     <option value="Vegan">Vegan</option>
+     <option value="Vegetarian">Vegetarian</option>
+     <option value="Pescatarian">Pescatarian</option>
+     <option value="Dairy-Free">Dairy Free</option>
+     <option value="Meatatarian">Meatatarian</option>
+   </select>
+  </div>
+  
+  <div class="form-group">
+    <p>Would you ever consider going Vegan?:</p>
+  <div class="input-group">
+    <label for="Yes"><input id="yes" type="radio" name="user-answer" value="yes" checked> Yes</label>
+    <label for="No"><input id="no" type="radio" name="user-answer" value="no" checked> No</label>
+    <label for="Unsure"><input id="unsure" type="radio" name="user-answer" value="unsure" checked> Unsure</label>
+  </div>
+  </div>
+ 
+  <div class="form-group">
+    <p>What additional features would you like added
+   to the website</p>
+    <div class="input-group">
+      <label><input type="checkbox" name="changes" value="Blogs"> Weekly Blogs</label>
+      <label><input type="checkbox" name="changes" value="Recipe-Videos"> Recipe Videos</label>
+      <label><input type="checkbox" name="changes" value="Quarterly-Giveaways"> Quarterly Videos</label>
+      <label><input type="checkbox" name-="changes" value="List"> List of Vegan Restaurants in Your Area</label>
+  </div>
+  </div>
+  
+  <div class="form-group">
+  <label id="textarea-label" for="comments">Any other additional comments or suggestions?:</label>
+  <textarea id="comments" placeholder="Enter your comments here ..." cols="30" rows="5"></textarea>
+  </div>
+  
+  <div class="form-group">
+    <input id="submit" class="button" type="submit" value"submit">
+  </div>
+
+</form>
